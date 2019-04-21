@@ -1,0 +1,9 @@
+<?php
+require('authenticate.php');
+require_once('db.inc');
+$stmt = $db->prepare("delete from products where id=?");
+$stmt->bind_param('i', $_POST['id']);
+$stmt->execute();
+require_once('redirect.php');
+redirect('admin.html');
+?>

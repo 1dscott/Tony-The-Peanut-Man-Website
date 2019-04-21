@@ -1,0 +1,427 @@
+/*===========================================PHONE=========================================*/
+
+body {
+background-repeat: no-repeat;
+background-size: cover;
+background-color: #b8b192;
+margin: 0 ! important;
+}
+
+
+
+
+/*------------------------------------------All Headers----------------------------------*/
+.header {
+text-align: center;
+background-color: #6c9295;
+margin: auto;
+padding-top: 2%;
+padding-bottom: 2%;
+padding-left: 2%;
+padding-right: 2%;
+height: 100%;
+width: 100%;
+}
+
+.header img {
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 20%;
+height: 10%;
+}
+
+/*--------------------------------------------All Menus------------------------------------*/
+.menu {
+text-align: center;
+list-style-type: none;
+overflow: hidden;
+margin: auto;
+background-color: #333;
+text-decoration: none;
+padding-left: 2%;
+padding-right: 2%;
+height: 61px;
+width: 100%;
+}
+
+li {
+display: inline;
+}
+
+li a {
+line-height: 65px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+background-color: #111;
+}
+
+#titles {
+font-family: 'Cookie', cursive;
+font-size:450%;
+color: white;
+text-align: center;
+background-color: #6c9295;
+padding-top: 2%;
+padding-bottom: 2%;
+width: 100%;	
+}
+
+/*-------------------------------------------Home--------------------------------------*/
+
+
+#homeContent {
+background-color: white;
+margin: auto;
+padding: 2%;
+height: 100%;
+width: 99%;
+padding-bottom: 10%;
+}
+
+
+#homeContent img {
+float: left;
+padding: 2%;
+max-width: 50%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+padding-bottom: 2%;
+}
+
+#homeContent p{
+font-family: 'PT Sans', sans-serif ! important;
+padding: 2%;
+font-size: 1.15em;
+padding-bottom: 2%;
+}
+
+/*----------------------------------------Products-------------------------------------*/
+
+#productsContent {
+background-color: white;
+margin: auto;
+padding: 2%;
+height: 100%;
+width: 99%;
+padding-bottom: 4%;
+}
+
+
+#products {
+  text-align:center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#productsImg{ 
+float: left;
+padding: 2%;
+max-width: 50%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 96px;
+height:96px;
+}
+
+#proName {
+padding: 2%;
+font-size:250%;
+font-family: 'Cookie', cursive;
+text-align: center;
+color: #6c9295;
+}
+
+#proDes {
+text-align: center;
+}
+
+#addCart {
+text-align: center;
+font-family: 'PT Sans', sans-serif ! important;
+}
+
+#products p{
+font-family: 'PT Sans', sans-serif ! important;
+font-size: 1.15em;
+padding: 2%;
+text-align: left;
+}
+
+#cost {
+text-align: center; 
+margin-top: 3%;
+margin-left: 1%;	
+}
+/*-------------------------------------------Cart-------------------------------------*/
+
+#cartContent {
+background-color: white;
+margin: auto;
+padding: 2%;
+height: 100%;
+width: 99%;
+padding-bottom: 10%;
+}
+
+#cart{
+text-align: center;
+padding: 10px;
+font-family: 'PT Sans', sans-serif ! important;
+}
+
+/*-------------------------------------------Login-------------------------------------*/
+
+#loginContent {
+background-color: white;
+margin: auto;
+padding: 2%;
+height: 100%;
+width: 99%;
+padding-bottom: 10%;
+}
+
+
+#login {
+text-align:center;
+padding: 10px;
+font-family: 'PT Sans', sans-serif ! important;
+}
+
+#loginContent p{
+padding: .2%;
+text-align: center;
+float: center;
+}
+
+
+/*-------------------------------------------admin-------------------------------------*/
+#adminContent {
+background-color: white;
+margin: auto;
+padding: 2%;
+height: 100%;
+width: 99%;
+padding-bottom: 10%;
+}
+
+
+#admin1 {
+text-align:center;
+padding: 10px;
+font-family: 'PT Sans', sans-serif ! important;
+}
+
+
+#adminTable {
+width:70%; 
+float: center;
+text-align:center;
+padding: 10px;
+font-family: 'PT Sans', sans-serif ! important;
+}
+
+#adminContent p{
+padding: .2%;
+text-align: center;
+float: center;
+}
+
+/*-------------------------------------------Order-------------------------------------*/
+
+#orderContent {
+background-color: white;
+margin: auto;
+padding: 2%;
+height: 100%;
+width: 99%;
+padding-bottom: 4%;
+}
+
+#orderName {
+padding: 2%;
+font-size:250%;
+font-family: 'Cookie', cursive;
+text-align: center;
+color: #6c9295;
+}
+
+#formName {
+padding: .5%;
+font-size:150%;
+font-family: 'Cookie', cursive;
+text-align: center;
+color: #6c9295;
+}
+
+#orderContent p{
+padding: .2%;
+text-align: center;
+float: center;
+}
+
+input.long {
+  width:20em;
+}
+/*-------------------------------------------About-------------------------------------*/
+
+
+#aboutContent {
+background-color: white;
+margin: auto;
+padding: 2%;
+height: 100%;
+width: 99%;	
+padding-bottom: 2%;
+}
+
+#aboutContent img {
+max-width: 100%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;	
+}
+
+#aboutContent h4 {
+padding: 2%;
+font-size: 250%;
+font-family: 'Cookie', cursive;
+text-align: center;
+color: #6c9295;
+}
+
+#aboutContent p{
+font-family: 'PT Sans', sans-serif ! important;
+font-size: 1em;	
+}
+/*-----------------------------------------Contact--------------------------------------*/
+
+#contactContent {
+background-color: white;
+margin: auto;
+padding: 2%;
+height: 100%;
+width: 99%;	
+padding-bottom: 6%;
+}
+
+
+
+#contactContent img {
+float: right;
+padding: 2%;
+max-width: 50%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+padding-bottom:2%;
+}
+
+#contactContent p{
+padding-top: 10%;
+font-family: 'PT Sans', sans-serif ! important;
+font-size: .8em;
+padding-bottom:2%;	
+}
+
+
+/*---------------------------------------All Footers-----------------------------------*/
+.footer { 
+text-align: center;
+color: #b2b58a;
+background-color: #333;
+padding: 2%;
+margin: auto;
+height: 100%;
+width: 99%;
+
+}
+
+
+/*=========================================DESKTOP=====================================*/
+@media only screen and (min-width:40em) {
+
+
+/*-------------------------------------------All Headers-------------------------------*/
+.header {
+width: 70%;
+}
+
+/*--------------------------------------------All Menus--------------------------------*/
+.menu {
+width: 70%;
+}
+
+
+/*-------------------------------------------Home------------------------------------*/
+
+
+#homeContent {
+width: 70%;
+}
+
+/*----------------------------------------Products-------------------------------------*/
+
+#productsContent {
+width: 70%;
+}
+
+/*----------------------------------------cart-------------------------------------*/
+#cartContent {
+width: 70%;
+}
+
+/*----------------------------------------admin-------------------------------------*/
+#adminContent {
+width: 70%;
+}
+
+
+/*-------------------------------------------Order-------------------------------------*/
+
+#orderContent {
+width: 70%;
+}
+
+/*-------------------------------------------About-------------------------------------*/
+
+
+#aboutContent {
+width: 70%;	
+}
+
+
+/*-----------------------------------------Contact-------------------------------------*/
+
+#contactContent {
+width: 70%;	
+}
+
+
+/*-----------------------------------------login-------------------------------------*/
+#loginContent {
+width: 70%;	
+}
+
+
+/*---------------------------------------All Footers-----------------------------------*/
+.footer { 
+width: 70%;
+}
+
+}

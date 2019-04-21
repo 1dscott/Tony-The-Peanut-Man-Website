@@ -1,0 +1,25 @@
+<?php
+//We need the cart:
+include("cart.php");
+$cart = load_cart();
+//We need to connect to the database:
+require_once("db.inc");
+//Prepare the statement, bind your data to it, and then execute it
+//insert into order(name, email, address, zip, phone) values (?, ?, ?, ?, ?);
+include("header.inc");
+?>
+<div id='productsContent'>
+<div id='titles'>Thank you</div>	
+<div id="products">
+<div id='formName'>
+<div id='cost'>
+<p>
+Your order will be shipped as soon as possible!
+</p>
+</div>
+</div>
+</div>
+</div>
+<?php
+include("footer.inc");
+?>

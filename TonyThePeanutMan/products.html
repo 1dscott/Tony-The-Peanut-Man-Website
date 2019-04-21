@@ -1,0 +1,39 @@
+<?php 
+$title = "Tony The Peanut Man - Products";
+include('header.inc');
+//include('productImage.php');
+?>
+	<div id='productsContent'>
+	<div id='titles'>Products</div>	
+	<div id="products">
+	<?php
+	require_once("db.inc"); //Connect to the database
+	$result = $db->query("select * from products");
+	while($row = $result->fetch_object())
+	{
+		print "<form action='cart.html' method='post'>";
+		print "<p>";
+		print "<div id='proName'>".$row->name."</div>";
+		print "<br>";
+		print "<img src='images/p".$row->id.".jpg'>";	
+		print "<br>";
+		print "<div id='cost'>"."$".$row->price."</div>";
+		print "<br>";
+		print "<br>";
+		print "<div id='proDes'>".$row->description."</div>";
+		print "<br>";
+		print "<p>";
+		print "<div id='addCart'><button type='submit'>Add to Cart</button></div>";
+		print "<input type='hidden' name='id' value='".$row->id."'>";
+		print "</form>";
+	}
+	?>
+	</div>
+	<br clear='all'> 
+	
+	<!--When are they open? -or- When can I place an order? -or- When will my order ship?-->
+	<p>	
+	
+
+	</div>
+<?php include('footer.inc'); ?>

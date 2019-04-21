@@ -1,0 +1,61 @@
+<?php
+require('authenticate.php');
+include('header.inc');
+?>
+<div id='adminContent'>	
+<div id='titles'>Admin</div>
+<div id='admin1'>
+<div id='formName'>
+<p>
+You are logged in.
+</p>
+</div>
+<div id='formName'>
+<p>
+<a href='admin.html?logoff=1'>Logoff</a>
+</p>
+</div>
+
+<table class='admin'>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </tr>
+<?php
+require_once('db.inc');
+$result = $db->query('select * from products');
+while($row = $result->fetch_object()) {
+	print "<div id='adminTable'>";
+	print "<tr>";
+	print "<form action='updateproduct.html' method='post'>";
+	print "<input type='hidden' name='id' value='<?php echo $row->id ?>'>";
+	print "<td><div id='proName'><input type='text' name='name' value='<?php echo addslashes($row->name)?>;'></div></td>";
+	print "<td><div id='cost'><input type='text' name='price' value='<?php echo addslashes($row->price)?>;'></div></td>";
+	print "<td><div id='proDes'><input type='text' name='description' value='<?php echo addslashes($row->description)?>;'></div></td>";
+	print "<td><button type='submit'>Update</button></td>";
+	print "</form>";
+	print "<form action='deleteproduct.html' method='post'>";
+	print "<input type='hidden' name='id' value='<?php echo $row->id; ?>'>";
+	print "<td><button type='submit'>Delete</button></td>";
+	print "</form>";
+	print "</tr>";
+	print "</div>";
+}
+?>
+
+<tr>
+  <form action='newproduct.html' method='post'>
+    <td><input type='text' name='name'></td>
+    <td><input type='text' name='price'></td>
+    <td><input type='text' name='desc'></td>
+    <td><button type='submit'>Create</button></td>
+  </form>
+  <td>&nbsp;</td>
+</tr>
+</table>
+</div>
+</div>
+<?php include('footer.inc'); ?>

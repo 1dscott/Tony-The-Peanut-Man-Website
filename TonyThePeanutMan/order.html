@@ -1,0 +1,106 @@
+<?php 
+$title = "Tony The Peanut Man - Order";
+include("cart.php");
+$cart = load_cart(); 
+include('header.inc'); 
+?>
+	<div id ='orderContent'>
+	<div id='titles'>Tony The Peanut Man</div>	
+	
+	<div id='orderName'>Order Info</div>
+	
+	<p>
+	If you live in mountain or pacific time zone please select 2 day shipping to ensure freshness. 
+ 	Boiled peanuts have a shelf life of no more than 2 weeks refrigerated and no more than 3 days non refrigerated. 
+ 	So when they arrive make sure you put them in the refrigerator.
+	</p>
+	<!--form: name, email, address, zip, phone, submit button-->
+	<p>	
+	<form action='thankyou.html' method='post' name="myForm" onsubmit="return validateForm()">
+		<p>	
+		<div id='formName'>
+		Name
+		</div>
+		</p>
+		<p> 
+		<input type="text" name="name" class="long">
+		</p>
+		
+		<p>	
+		<div id='formName'>
+		Email 
+		</div>
+		</p>
+		<p>
+		<input type="text" name="email" class="long">
+		</p>
+		
+		<p>	
+		<div id='formName'>
+		Address
+		</div>
+		</p>
+		<p>
+		<input type="text" name="address" class="long">
+		</p>
+		
+		<p>	
+		<div id='formName'>
+		Zip Code
+		</div>
+		</p>
+		<p>
+		<input type="text" name="zip" class="long">
+		</p>
+		
+		<p>	
+		<div id='formName'>
+		Phone Number
+		</div>
+		</p>
+		<p>
+		<input type="text" name="phone" class="long">
+		</p>
+		
+		<p>
+		<div id='formName'>
+		
+		<p>
+		<input type="radio" name="ship">Standard Shipping
+		</p>
+		
+		<p>
+		<input type="radio" name="ship">Express Shipping
+		</p>
+		<p>
+		<input type="radio" name="ship">2 Day Shipping
+		</p>
+		
+		</div>
+		</p>
+		<p>
+		<div id='formName'>
+		<input type="submit" value="Place Order">
+		</div>
+		</p>
+	</form>
+
+	
+	</p>	
+	<br clear='all'> 
+
+	</div>
+	<div id='cartContent'>
+	<div id='titles'>Shopping Cart</div>
+<?php 
+show_cart($cart);
+?>
+</div>
+<?php
+include('footer.inc'); 
+?>
+
+
+
+
+

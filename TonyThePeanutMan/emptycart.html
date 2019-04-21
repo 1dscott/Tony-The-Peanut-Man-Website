@@ -1,0 +1,6 @@
+<?php
+$cart = array();
+setcookie('cart', serialize($cart), time()+60*60*24*7);
+include('redirect.php');
+redirect('cart.html');
+?>

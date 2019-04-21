@@ -1,0 +1,38 @@
+<?php
+if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS']!='on') {
+  require_once('redirect.inc');
+  redirect('https://student.kainaw.com/~descott/login.html');
+}
+?>
+<?php include('header.inc'); ?>
+
+<div id='loginContent'>	
+<div id='titles'>Login</div>
+<div id='login'>
+  <form action='admin.html' method='post'>
+      
+	  <p>	
+	  <div id='formName'>
+	  Username:
+	  </div>
+	  </p>
+	  <p>
+      <input type='text' name='user'>   
+      </p>
+	  <p>	
+	  <div id='formName'>
+      Password:
+	  </div>
+	  </p>
+	  <p>
+      <input type='password' name='pass'>
+	  </p>
+	  <p>
+	  <div id='formName'>
+       <th colspan='2'><button type='submit'>Login</button></th>
+	   </div>
+	  </p>
+  </form>
+</div>
+</div>
+<?php include('footer.inc'); ?>

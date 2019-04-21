@@ -1,0 +1,14 @@
+<?php
+include("cart.php");
+$cart = load_cart(); 
+include("header.inc");
+?>
+	<div id='cartContent'>
+	<div id='titles'>Shopping Cart</div>	
+<?php
+show_cart($cart);
+?>
+</div>
+<?php
+include("footer.inc");
+?>
